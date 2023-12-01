@@ -7,13 +7,17 @@
     <script
       src="https://kit.fontawesome.com/1b8979aee2.js"
       crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- header -->
     <header>
       <nav class="navbar">
-        <a href="#home">Home</a>
+        <a href="#home" class="active">Home</a>
         <a href="#features">Features</a>
         <a href="#pricing">Pricing</a>
         <a href="#blog">Blog</a>
@@ -27,8 +31,64 @@
     </header>
     <!-- header ends -->
 
-    <section class="home" id="home"></section>
+    <!-- home section  -->
+    <section class="home" id="home">
+      <div class="swiper home-swiper">
+        <h1 class="main-header">Startup 3</h1>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide advantages">
+            <h3>Forget About Code</h3>
+            <p>
+              Startup Framework gives you complete freedom over your creative
+              process — you don’t have to think about any technical aspects.
+              There are no limits and absolutely no coding.
+            </p>
+          </div>
+          <div class="swiper-slide advantages">
+            <h3>Advantage Two</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              animi corporis cupiditate atque in pariatur?
+            </p>
+          </div>
+          <div class="swiper-slide advantages">
+            <h3>Advantage Three</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              corrupti iusto, officia excepturi libero et incidunt nostrum.
+            </p>
+          </div>
+          <div class="swiper-slide advantages">
+            <h3>Advantage Four</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa id
+              quasi officiis quam dignissimos doloremque repudiandae. Harum
+              similique assumenda amet!
+            </p>
+          </div>
+          <div class="swiper-slide advantages">
+            <h3>Advantage Five</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+              officia iure beatae.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="swiper-button-next">
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+      <a href="#" class="btn">Create an Account</a>
+    </section>
+    <!-- home section ends  -->
+
     <!-- script  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

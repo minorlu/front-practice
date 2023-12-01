@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap");
 
+/* vars, swiper settings etc. */
 :root {
   --white: #ffffff;
   --blue: #482be7;
   --dark-blue: #2f1893;
+  --swiper-pagination-bullet-size: 0.7rem;
+  --swiper-pagination-color: var(--white);
+  --swiper-pagination-bullet-inactive-color: #00000000;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 0.4rem;
+  --swiper-navigation-color: var(--white);
 }
 
+/* default setting, styles reset etc. */
 * {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
@@ -20,6 +28,7 @@
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  color: var(--white);
 }
 
 header {
@@ -32,6 +41,36 @@ header {
   z-index: 1000;
 }
 
+.swiper-pagination-bullet {
+  border: var(--white) 1px solid;
+}
+
+.swiper-button-next i,
+.swiper-button-prev i {
+  font-size: 1.5rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.btn {
+  font-size: 1.1rem;
+  color: var(--white);
+  background: var(--blue);
+  padding: 1rem 2rem;
+  border-radius: 6.3rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  color: var(--blue);
+  background: var(--white);
+}
+
+/* navbar */
 .navbar {
   margin-top: 5rem;
 }
@@ -41,8 +80,19 @@ header {
   padding: 0 1.25rem;
   font-size: 1.1rem;
   color: var(--white);
+  transition: 0.2s;
 }
 
+.navbar a:hover {
+  opacity: 0.3;
+  letter-spacing: 0.1rem;
+}
+
+.navbar a.active {
+  opacity: 0.3;
+}
+
+/* home section */
 .home {
   background: linear-gradient(rgba(47, 24, 149, 0.5), rgba(47, 24, 149, 0.5)),
     url("img/home-bg.jpg");
@@ -50,4 +100,46 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 7rem;
+}
+
+.home-swiper {
+  height: 23rem;
+  width: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15.5rem 0 3.6rem;
+}
+
+.main-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.swiper-wrapper {
+  padding-top: 1.7rem;
+}
+
+.advantages {
+  text-align: center;
+  width: 46rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages h3 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 1.7rem;
+  line-height: 5.4rem;
+}
+
+.advantages p {
+  line-height: 2rem;
+  font-size: 1.4rem;
 }
