@@ -143,3 +143,42 @@ header {
   line-height: 2rem;
   font-size: 1.4rem;
 }
+
+/* content section */
+.content {
+  background: linear-gradient(rgba(47, 24, 149, 0.5), rgba(47, 24, 149, 0.5)),
+    url("img/content-bg.jpg");
+  height: 34rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.content .container {
+  width: 51rem;
+  text-align: center;
+}
+
+.content .container h5 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 1.7rem;
+  padding-top: 6.7rem;
+}
+
+.content .container h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 4.4rem;
+  padding-top: 1.8rem;
+}
+
+.content .container p {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  opacity: 0.7;
+  padding-top: 1.4rem;
+}
