@@ -455,19 +455,6 @@ form .inputs .or p {
   letter-spacing: 0.1rem;
 }
 
-@media (max-width: 1024px) {
-  .testimonial {
-    height: 100%;
-  }
-
-  .testimonial .container {
-    padding: 5rem;
-  }
-  .testimonial-cards {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* call to action section  */
 .call-to-action {
   background: linear-gradient(rgba(47, 24, 149, 0.3), rgba(47, 24, 149, 0.3)),
@@ -544,4 +531,109 @@ form .inputs .or p {
 .call-to-action .container .buttons .call-btn:hover {
   background: var(--white);
   color: var(--btn-color);
+}
+
+/* showcase section */
+.showcase {
+  background: var(--dark-blue);
+  height: 75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.3rem;
+  width: 60.6rem;
+}
+
+.showcase .container .showcase-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase .container .showcase-title h3 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+}
+
+.showcase .container .showcase-title .showcase-btn {
+  background-color: #00000000;
+  border: solid 0.15rem #ffffff4d;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+}
+
+.showcase .container .showcase-title .showcase-btn:hover {
+  background: var(--white);
+  color: var(--dark-blue);
+}
+
+.showcase .container .works {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4.6rem 1.9rem;
+}
+
+.showcase .container .works .work-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showcase .container .works .work-box img {
+  width: 29rem;
+  height: 17.5rem;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 1.9rem;
+}
+
+.showcase .container .works .work-box h6 {
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 2.5rem;
+  margin-bottom: 0.18rem;
+  letter-spacing: 0.15rem;
+}
+
+.showcase .container .works .work-box h5 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .testimonial {
+    height: 100%;
+  }
+
+  .testimonial .container {
+    padding: 5rem;
+  }
+
+  .testimonial-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase {
+    height: 100%;
+  }
+
+  .showcase .container {
+    padding: 5rem;
+    align-items: center;
+  }
+
+  .showcase .container .works {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .showcase .container .showcase-title {
+    width: 29rem;
+  }
 }
