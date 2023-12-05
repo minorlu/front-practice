@@ -467,3 +467,81 @@ form .inputs .or p {
     grid-template-columns: 1fr;
   }
 }
+
+/* call to action section  */
+.call-to-action {
+  background: linear-gradient(rgba(47, 24, 149, 0.3), rgba(47, 24, 149, 0.3)),
+    url("img/call-bg.jpg");
+  height: 50rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-to-action .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 33rem;
+}
+
+.call-to-action .container .title h3 {
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+.call-to-action .container .title p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-top: 1.25rem;
+}
+
+.call-to-action .container .title {
+  margin-bottom: 3.6rem;
+}
+
+.call-to-action .container .buttons {
+  display: flex;
+  gap: 1.9rem;
+}
+
+.call-to-action .container .buttons .play-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  background: #ea3223;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.call-to-action .container .buttons .play-btn i {
+  color: var(--white);
+  font-size: 1.3rem;
+  transition: 0.2s;
+}
+
+.call-to-action .container .buttons .play-btn:hover {
+  background: var(--white);
+}
+
+.call-to-action .container .buttons .play-btn:hover i {
+  color: #ea3223;
+}
+
+.call-to-action .container .buttons .call-btn {
+  padding: 1.4rem 3.1rem;
+  background: var(--btn-color);
+}
+
+.call-to-action .container .buttons .call-btn:hover {
+  background: var(--white);
+  color: var(--btn-color);
+}
