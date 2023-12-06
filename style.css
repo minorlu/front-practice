@@ -536,7 +536,7 @@ form .inputs .or p {
 /* showcase section */
 .showcase {
   background: var(--dark-blue);
-  height: 75rem;
+  height: 69rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -606,6 +606,76 @@ form .inputs .or p {
   line-height: 2rem;
 }
 
+/* team section  */
+.team {
+  background: var(--dark-blue);
+  height: 69rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team .container {
+  display: flex;
+  flex-direction: column;
+  gap: 4.4rem;
+  width: 73rem;
+}
+
+.team .container .title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 47rem;
+}
+
+.team .container .title h3 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+}
+
+.team .container .title p {
+  font-size: 1.35rem;
+  line-height: 2rem;
+}
+
+.team .container .members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.75rem 9.1rem;
+  width: 50rem;
+}
+
+.team .container .members .member img {
+  border-radius: 50%;
+  height: 100px;
+  object-fit: cover;
+  width: 100px;
+  aspect-ratio: 1 / 1;
+}
+
+.team .container .members .member h5 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.team .container .members .member h6 {
+  font-weight: 400;
+  line-height: 2.2rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.team .container .members .member .socials {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* media queries  */
+
 @media (max-width: 1024px) {
   .testimonial {
     height: 100%;
@@ -635,5 +705,45 @@ form .inputs .or p {
 
   .showcase .container .showcase-title {
     width: 29rem;
+  }
+
+  .team .container .members {
+    display: flex;
+    flex-direction: column;
+    width: 12.5rem;
+  }
+
+  .team .container .members .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team .container .members .member .socials {
+    width: 100%;
+  }
+
+  .team {
+    height: 100%;
+  }
+
+  .team .container {
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .team .container {
+    align-items: center;
+  }
+
+  .team .container .members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team .container .members .member {
+    width: 11rem;
   }
 }
